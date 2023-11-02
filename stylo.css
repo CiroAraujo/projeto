@@ -1,3 +1,22 @@
+:root  {
+--header-size:80px;
+--main-size: ca
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f1f1;
+    font-family: helvetica;
+
+}
+
 table{
     border: 10px ;
     width: 100%;
@@ -9,3 +28,41 @@ table{
     margin-top: 200px;
 
 }
+#header{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: var(--header-size);
+    border-bottom: 1px solid ;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.05);
+    
+}
+#header h1 {
+    color: #666666;
+    text-shadow: 0 2px 4px rgba(0, 0,0, 0.35);
+
+}
+
+#main{ 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: var(--main-size);
+    margin: 0 auto;
+    padding: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+
+}
+
